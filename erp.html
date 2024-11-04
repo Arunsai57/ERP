@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KL University ERP - Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #800000;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header .logout {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            background-color: #333;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 16px;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar a.active {
+            background-color: #800000;
+        }
+
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .dashboard-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .icon-card {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            width: 180px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-card img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .icon-card span {
+            display: block;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .icon-card span.count {
+            color: #800000;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="kl_logo.png" alt="KL University Logo">
+        <span>Student Portal - <strong>ERP</strong></span>
+        <div>
+            <span>Welcome 2200032380</span>
+            <a href="#" class="logout">Logout</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Academic Registration</a>
+        <a href="#">Attendance Register</a>
+        <a href="#">Career Choice</a>
+        <a href="#">Courses</a>
+        <a href="#">Counselling Diary</a>
+        <a href="#">Clubs/Activities</a>
+        <a href="#">Exam Section</a>
+        <a href="#">Feedback</a>
+        <a href="#">Fee Payments</a>
+        <a href="#">Hostel Management</a>
+        <a href="#">Hall Ticket</a>
+        <a href="#">Infrastructure Related</a>
+        <a href="#">Library</a>
+        <a href="#">My CGPA</a>
+        <a href="#">Nodue</a>
+    </div>
+    <div class="main-content">
+        <h2>Welcome to the KL University ERP Portal</h2>
+        <div class="dashboard-icons">
+            <div class="icon-card">
+              <img src="journal_icon.png" alt="Journals & Conferences">
+            <span class="count">0</span>
+                <span>Journals & Conferences</span>
+            </div>
+            <div class="icon-card">
+                <img src="awards_icon.png" alt="Awards & Recognitions">
+                <span class="count">0</span>
+           <span>Awards & Recognitions</span>
+            </div>
+            <div class="icon-card">
+                <img src="workshops_icon.png" alt="Workshops, Seminars & Guest Lectures">
+             <span class="count">0</span>
+                <span>Workshops, Seminars & Guest Lectures</span>
+            </div>
+            <div class="icon-card">
+                <img src="projects_icon.png" alt="Projects & Consultancy">
+           <span class="count">0</span>
+                <span>Projects & Consultancy</span>
+            </div>
+      </div>
+    </div>
+
+</body>
+</html>
